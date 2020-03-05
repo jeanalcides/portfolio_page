@@ -10,6 +10,7 @@
 
 body{
     color: #FFF;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -73,6 +74,53 @@ a{
 .itemNav:hover{
     border-bottom: 5px solid #CBA135;
 }
+
+
+/* ESTILIZAÇÃO DA HEADER */
+#header{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #000, #333);
+}
+
+#subHeader{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boxHeader{
+    width: 50%;
+    min-width: 300px;
+}
+
+#leftHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#rightHeader{
+    background-image: url(../img/imgHeader.png);
+    background-size: 80%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#textNameHeader{
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    margin: 10px 0px;
+}
+
+#line{
+    color: #CBA135;
+}
+
+
 
 
 
