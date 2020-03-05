@@ -1,0 +1,91 @@
+/* CONFIGURAÇÕES GERAIS DA PÁGINA */
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Righteous|Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid silver;
+}
+
+body{
+    color: #FFF;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* CONGFIGURAÇÕES DOS ELEMENTOS */
+#geral{
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333;
+}
+
+#navBarTop{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #292929;
+}
+
+#navBar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#boxLogo{
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+    color: #CBA135;
+    text-shadow: 3px 3px 0px #292929;
+}
+
+#boxNav{
+    
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+
+.itemNav{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    transition: ease 300ms;
+}
+
+.itemNav:hover{
+    border-bottom: 5px solid #CBA135;
+}
+
+
+
+/* -----------------------ESTILIZAÇÃO MOBILE----------------------- */
+@media screen and (max-width: 600px){
+
+    #navBar{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #boxNav{
+        display: none;
+    }
+}
