@@ -11,6 +11,7 @@
 body{
     color: #FFF;
     font-family: 'Roboto', sans-serif;
+    background-color: #333333;
 }
 
 .boxInter{
@@ -22,12 +23,31 @@ a{
     text-decoration: none;
 }
 
-/* CONGFIGURAÇÕES DOS ELEMENTOS */
-#geral{
-    width: 100vw;
-    background-color: #333333;
+.lineText{
+    width: 20px;
+    height: 1px;
+    background-color: #CBA135;
+    margin-right: 10px;
 }
 
+.divButton{
+    width: fit-content;
+    background-image: linear-gradient(to right, #B07418, #CBA135);
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #FFF;
+    font-weight: 800;
+}
+
+/* CONGFIGURAÇÕES DOS ELEMENTOS */
+
+/* DIV GERAL */
+#geral{
+    width: 100vw;
+    border: 1px solid red;
+}
+
+/* BARRA SUPERIOR E MENU DE NAVEGAÇÃO */
 #navBarTop{
     width: 100vw;
     height: 10vh;
@@ -48,10 +68,6 @@ a{
     font-family: 'Righteous', cursive;
     color: #CBA135;
     text-shadow: 3px 3px 0px #292929;
-}
-
-#boxNav{
-    
 }
 
 #nav{
@@ -117,8 +133,29 @@ a{
     margin: 10px 0px;
 }
 
-#line{
-    color: #CBA135;
+.textDec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+#skillsBox{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.itemSkill{
+    width: 25%;
+    margin: 10px 0;
+}
+
+.textSkill{
+    font-size: 13px;
 }
 
 /* ESTILIZAÇÃO DA SESSÃO SOBRE MIM */
@@ -128,19 +165,49 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 #subAbout{
+    height: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .boxAbout{
     width: 50%;
+    min-width: 300px;
+    padding: 5px;
 }
 
+#aboutLeft{
+    height: 100%;
+    background-image: url(../img/me.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    border: 1px solid red;
+}
+
+#textInfoOne{
+    font-weight: bold;
+}
+
+#textInfoTwo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.textInfoTree{
+    font-size: 15px;
+    font-weight: 100;
+    text-align: left;
+}
 
 
 
@@ -155,5 +222,37 @@ a{
 
     #boxNav{
         display: none;
+    }
+
+    /* ESTILIZAÇÃO DA HEADER */
+    #header{
+        height: fit-content;
+        padding: 50px 0;
+    }
+
+    #textNameHeader{
+        font-size: 40px;
+    }
+
+    #rightHeader{
+        display: none;
+    }
+
+
+    /* ESTILIZAÇÃO DA SESSÃO SOBRE MIM */
+    #aboutMe{
+        height: fit-content;
+    }
+
+    .boxAbout{
+        width: 100%;
+    }
+
+    #aboutLeft{
+        width: 250px;
+        height: 250px;
+    }
+    #aboutRight{
+        height: 50%;
     }
 }
